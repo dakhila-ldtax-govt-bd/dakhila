@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="bn">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ভূমি উন্নয়ন কর:
+        Dakhila</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Bengali:wght@400;500;700&display=swap"
+        rel="stylesheet">
+    <style>
+        /* Use Noto Sans Bengali for all text */
+        body {
+            font-family: 'Noto Sans Bengali', sans-serif;
+            background-color: #f3f4f6;
+        }
+
+        /* Styling for the receipt container to mimic a paper document */
+        .receipt-container {
+            max-width: 768px;
+            /* Standard receipt/A4 width approximation */
+            margin: 2rem auto;
+            background-color: white;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+        }
+
+        .table-header-cell {
+            padding: 0.5rem;
+            font-weight: 700;
+            border-bottom: 1px solid #000;
+        }
+
+        .table-cell {
+            padding: 0.5rem;
+        }
+
+        .section-title {
+            font-weight: 700;
+            border: 1px solid #000;
+            padding: 0.25rem;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+
+        /* Print-friendly styling */
+        @media print {
+            body {
+                background-color: white;
+            }
+
+            .receipt-container {
+                margin: 0;
+                border: none;
+                box-shadow: none;
+            }
+        }
+    </style>
+</head>
+
+<!-- <body class="p-4 sm:p-6 bg-[#d7f2c9]"> -->
+
+    <body class="p-4 sm:p-2 receipt-container rounded-lg border-dotted border-1 border-gray-800">
+
+        <div>
+            <!-- Header Section -->
+            <header class="text-center mb-6 border-b border-gray-400 pb-4">
+                <div class="flex justify-between">
+                    <p class="text-sm text-left">বাংলাদেশ ফরম নং ১০৭৭ <br> (সংশোধিত)</p>
+                    <p class="text-sm text-right">(পরিশিষ্ট: ৩৮) <br>ক্রমিক নং 333225085018</p>
+                </div>
+                <h1 class="text-sm  mt-1 text-gray-800">ভূমি উন্নয়ন কর পরিশোধ রসিদ</h1>
+                <p class="text-xs text-gray-600">(অনুচ্ছেদ ৩৯২ দ্রষ্টব্য)</p>
+            </header>
+
+
+
+            <!-- Office Location -->
+            <div class="">
+               <span class="text-sm ">সিটি কর্পোরেশন/পৌর/ ইউনিয়ন ভূমি অফিসের নাম: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;সফিপুর ইউনিয়ন ভূমি অফিস</span>
+
+               
+            
+                <div class="flex justify-between">
+                    <span class="text-sm">মৌজার নাম ও জে. এল. নং:	 &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; কৌচাকুড়ী-১৬২</span>
+                    <span class="text-sm ">উপজেলা/থানা:   &nbsp;  &nbsp; &nbsp; &nbsp; &nbsp; কালিয়াকৈর</span>
+                    <span class="text-sm">জেলা: গাজীপুর</span>
+                     
+                </div>
+                <span class="text-sm">২ নং রেজিস্টার অনুযায়ী হোল্ডিং নম্বর: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; ৯৫১৭</span> <br>
+                <span class="text-sm">খতিয়ান নং: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;৩৪১৬</span>
+            </div>
+            <!-- Owner and Land Details -->
+             <div class="text-sm font-semibold text-center underline ">মালিকের বিবরণ</div>
+             <table class="border border-1 border-dotted border-gray-800 w-full text-sm mb-4">
+                <tr class="border border-1 border-dotted border-gray-800">
+                    <th class="border border-1 border-dotted border-gray-800">ক্রমঃ</th>
+                    <th class="border border-1 border-dotted border-gray-800">মালিকের নাম</th>
+                    <th class="border border-1 border-dotted border-gray-800">মালিকের অংশ</th>
+                </tr>
+                <tr class="text-center">
+                    <td class="border border-1 border-dotted border-gray-800">১</td>
+                    <td class="text-left " >মোঃ শাহজাহান আলী</td>
+                    <td class="border border-1 border-dotted border-gray-800">১</td>
+                </tr>
+             </table>
+                <div class="text-sm font-semibold text-center underline ">জমির বিবরণ</div>
+             <table class="border border-1 border-dotted border-gray-800 w-full text-sm mb-4">
+                <tr class="border border-1 border-dotted border-gray-800">
+                    <th class="border border-1 border-dotted border-gray-800">ক্রমঃ</th>
+                    <th class="border border-1 border-dotted border-gray-800">দাগ নং</th>
+                    <th class="border border-1 border-dotted border-gray-800">জমির শ্রেণি</th>
+                    <th class="border border-1 border-dotted border-gray-800">জমির পরিমাণ (শতাংশ)</th>
+                </tr>
+                <tr class="text-center">
+                    <td class="border border-1 border-dotted border-gray-800">১</td>
+                    <td class="text-left " >১৭২৬</td>
+                    <td class="border border-1 border-dotted border-gray-800">সাইল( আবাসিক)</td>
+                    <td class="border border-1 border-dotted border-gray-800">১৭.৫</td>
+                </tr>
+             </table>
+             <table class="border border-1 border-dotted border-gray-800 w-full text-sm">
+                <tr class="text-center">
+                    <td class="border border-1 border-dotted border-gray-800">সর্বমোট জমি (শতাংশ)</td>
+                    <td class="border border-1 border-dotted border-gray-800 w-1/2">১৭.৫</td>
+                </tr>
+             </table>
+            
+        </div>
+
+
+       
+
+        <!-- Collection Details Table (আদায়ের বিবরণ) -->
+        <div class="mb-6 mt-6 border-t border-gray-200 rounded-sm overflow-hidden">
+            <div class="section-title bg-gray-200 border-b-0">আদায়ের বিবরণ</div>
+            <table class="w-full text-xs md:text-sm border-t border-gray-200">
+                <thead>
+                    <tr class="bg-gray-100 text-center font-bold">
+                        <th class="table-header-cell border-r border-gray-500">তিন বৎসরের ঊর্ধ্বের বকেয়া</th>
+                        <th class="table-header-cell border-r border-gray-500">গত তিন বৎসরের বকেয়া</th>
+                        <th class="table-header-cell border-r border-gray-500">বকেয়ার জরিমানা ও ক্ষতিপূরণ</th>
+                        <th class="table-header-cell border-r border-gray-500">হাল দাবি</th>
+                        <th class="table-header-cell border-r border-gray-500">মোট দাবি</th>
+                        <th class="table-header-cell border-r border-gray-500">মোট আদায়</th>
+                        <th class="table-header-cell border-r border-gray-500">মোট বকেয়া</th>
+                        <th class="table-header-cell">মন্তব্য</th>
+                    </tr>
+                </thead>
+                <tbody class="text-center">
+                    <tr class="border-t border-gray-500">
+                        <td class="table-cell border-r border-gray-300">২১৯</td>
+                        <td class="table-cell border-r border-gray-300">১৪</td>
+                        <td class="table-cell border-r border-gray-300">১৮০</td>
+                        <td class="table-cell border-r border-gray-300">৪১৩</td>
+                        <td class="table-cell border-r border-gray-300 font-bold">৪১৩</td>
+                        <td class="table-cell border-r border-gray-300"></td>
+                        <td class="table-cell border-r border-gray-300"></td>
+                        <td class="table-cell"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Summary and Footer -->
+        <div class="text-sm space-y-3">
+            <p class="font-semibold border-t border-b border-gray-400 py-1">
+                সর্বমোট (কথায়): <span class="text-base font-bold text-gray-800">চার শত তের টাকা মাত্র।</span>
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                <p><strong>নোট:</strong> সর্বশেষ কর পরিশোধের সাল <span class="font-bold">2025-2026 (অর্থবছর)</span></p>
+                <p><strong>চালান নংঃ</strong></p>
+                <p><strong>তারিখ (বাংলা):</strong> ২৪ আশ্বিন ১৪৩২</p>
+                <p><strong>তারিখ (ইংরেজি):</strong> ০৯ অক্টোবর, ২০২৫</p>
+            </div>
+
+            <div class="border-t border-dashed pt-4 text-center mt-6">
+                <p class="text-xs text-gray-500">
+                    এই দাখিলা ইলেক্ট্রনিকভাবে তৈরি করা হয়েছে, <span class="font-bold">কোন স্বাক্ষর প্রয়োজন নেই।</span>
+                </p>
+                <p class="text-xs text-gray-500 mt-1">1/1</p>
+            </div>
+        </div>
+
+        </div>
+
+    </body>
+
+</html>
